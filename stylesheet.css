@@ -194,6 +194,8 @@ ul 	{
 	line-height: 1.6;
 	font-size: 16px;
 	text-align: justify;
+	list-style-type: none; 
+	padding: 0;
 	}
 
 ol 	{
