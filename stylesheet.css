@@ -1048,7 +1048,8 @@ h1, h3, h4, p {
 }
 
 
-/* Inquiry Form Styling */
+/*-------------------------------- Inquiry Form Styling ----------------------*/
+
 .inquiry-form {
   display: flex;
   flex-direction: column;
@@ -1107,6 +1108,64 @@ h1, h3, h4, p {
     font-size: 20px;
   }
 }
+
+/* -------------------------------- Social Media Styling ---------------------*/
+
+.social-media {
+  text-align: center;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+                /* ----------Styling individual links ------ */
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #3b5998; /* Default to Facebook blue */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+                /* -----------Hover effects for links --------*/
+
+.social-media a:hover {
+  background-color: #1da1f2; /* Twitter blue on hover */
+  transform: scale(1.1);
+}
+
+                 /* ---- Specific styling for each platform ----*/
+
+.social-media a:nth-child(1) {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.social-media a:nth-child(2) {
+  background-color: #1da1f2; /* Twitter blue */
+}
+
+.social-media a:nth-child(3) {
+  background-color: #dd4b39; /* Mail red */
+}
+
+/*--- Responsive design: Adjust font size and spacing for smaller screens ---*/
+
+@media (max-width: 600px) {
+  .social-media {
+    font-size: 14px;
+  }
+  .social-media a {
+    margin: 5px;
+    padding: 8px 12px;
+  }
+}
+
+
+
+
+
 
 
 
