@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - AfricaCareLink Foundation</title>
+  <title>Get in Touch</title>
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -20,11 +21,28 @@
 <section class="get-in-touch">
     <h2>Get in Touch</h2>
     <ul>
-      <li><strong>Email:</strong> <a href="mailto:info@africacarelink.org">info@africacarelink.org</a></li>
-      <li><strong>Phone:</strong> +254 750 810 258</li>
+      <li><strong>Email:</strong> <a href="mailto:africacarelinkfoundation@gmail.org">africacarelinkfoundation@gmail.org</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+254750810258">+254 750 810 258</a></li>
       <li><strong>Address:</strong> Eastern Bypass, Nairobi, Kenya</li>
     </ul>
-    <button class="contact-button">Submit Your Inquiry</button>
+
+    <h3>Submit Your Inquiry</h3>
+
+    <form action="process_inquiry.php" method="post" class="inquiry-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="phone">Your Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your inquiry here..." required></textarea>
+
+      <button type="submit" class="submit-button">Send Inquiry</button>
+    </form>
   </section>
 
 
@@ -36,8 +54,8 @@
     <ul>
       <li><strong>Facebook:</strong> <a href="#">AfricaCareLink Foundation</a></li>
       <li><strong>Twitter:</strong> <a href="#">@AfricaCareLink</a></li>
-      <li><strong>Instagram:</strong> <a href="#">@AfricaCareLink</a></li>
-      <li><strong>LinkedIn:</strong> <a href="#">AfricaCareLink Foundation</a></li>
+      
+      
     </ul>
   </section>
 
