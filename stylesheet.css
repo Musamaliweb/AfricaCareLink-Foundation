@@ -39,6 +39,7 @@ header {
 
 
 
+
 /* =======================Style for the logo image ==========================*/
 .
 
@@ -185,7 +186,7 @@ p 	{
 	}
 
 .slogan	{
-  	color: Brown;
+  	color: #FF5733;
 	text-align: left;
 	font-weight: 400px;
 	}
@@ -240,6 +241,8 @@ header {
 .notification-bar span {
     	margin-right: 20px; /* Space between text and button */
 	}
+
+
 
 .donation-button {
     	background-color: #FF5733; /* White background for button */
@@ -308,6 +311,7 @@ figcaption {
 /*============== Accordion (Collapsible Sections) Success Stories Page====== */
 
 .accordion {
+	background: linear-gradient(rgba(221, 160, 221, 0.8), rgba(240, 128, 128, 0.8)), url('your-background-image.jpg') center/cover;
   	cursor: pointer;
   	padding: 10px;
   	width: 100%;
@@ -438,7 +442,7 @@ figcaption {
 .caption{
     text-align: center;
     font-size: 14px;
-    color: #666;
+    color: black;
     margin-top: 5px;
 	}
 
@@ -457,7 +461,7 @@ figcaption {
 .tortolaimage {
 	width: 900px;
     	height: 500px;
-	margin-left: 270px;
+	margin-left: 210px;
 	margin-top: 10px;
 	text-align: center;
 	}
@@ -468,7 +472,10 @@ footer {
   	background-color: #0000CD;
   	color: white;
   	text-align: left;
-  	padding: 20px 10px;
+  	padding: 20px 20px;
+	margin-top: -18px;
+	
+	
 	}
 
 .footer-content 
@@ -477,6 +484,9 @@ footer {
 	width: 100%;
     	color: white;
     	text-align: left;
+
+
+	
 	}
 
 footer .social-media 
@@ -707,6 +717,170 @@ h3 {
     color: #333;
     font-size: 1.2em;
     margin-top: 20px;
+    background-color: none;
+    padding: 20px;
+line-type:none;
+}
+
+/*----------------Slide CSS (Humanitarian Aid) ---------------------*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slideshow-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  transition: transform 0.5s ease-in-out;
+  margin-top:-50px;
+}
+
+.slide-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+h1, h3, h4, p {
+  margin-bottom: 15px;
+}
+
+.slide p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+ 	/*--------Highlighting the "<h1>" Numbers in the Slidee -------*/
+
+.highlight-number {
+    font-size: 2em;     /* Increase size of the number */
+    color: #FF4500;     /* Distinct color for the number, e.g., orange-red */
+    font-weight: bold;
+    vertical-align: middle; /* Ensures it aligns nicely with the rest of the heading */
+}
+
+/*---------------------------Forward/Backward Navigation Buttons ------------*/
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 100px;
+  background-color: #333;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.left {
+  left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.right {
+  right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/*------------------------------ Button Hover Effects -----------------------*/
+
+.nav-button:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* ------------------------------Button Normal State -------------------------*/
+
+.nav-button:not(:hover) {
+  background-color: #333;
+}
+
+/*------------------------------- Cursor Control -----------------------------*/
+
+.slideshow-container {
+  cursor: pointer;
+}
+
+
+
+/*--------------------CSS For Index WElcoming Note Section -----------------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+                  /* -------Styling for the about section --------*/
+
+#about {
+    background: linear-gradient(rgba(0, 0, 128, 0.7), rgba(0, 128, 128, 0.7)), url('your-background-image.jpg') center/cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+                   /* -------Styling for the header text -------*/
+
+#about h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-align: left;        
+    padding-left: 20px; 
+}
+
+                   /* -----Styling for the paragraph text ------*/
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+
+.highlight-number {
+    font-size: 2em;     /* Increase size of the number */
+    color: #FF4500;     /* Distinct color for the number, e.g., orange-red */
+    font-weight: bold;
+    vertical-align: middle; /* Ensures it aligns nicely with the rest of the heading */
 }
 
 
@@ -718,8 +892,206 @@ h3 {
 
 
 
+                   /* ------------- Links styling --------------*/
+
+#about a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about a:hover {
+    text-decoration: underline;
+}
+
+                     /* --------Highlight for specific keywords --------*/
+#about strong {
+    color: #FF5733;
+    font-weight: bold;
+}
 
 
+
+/*------------CSS For linear gradient background options Section-----------*/
+
+.index-page
+	{
+	background: linear-gradient(rgba(255, 182, 193, 0.7), rgba(255, 99, 71, 0.7)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.masisi
+	{
+	background: linear-gradient(rgba(34, 139, 34, 0.7), rgba(0, 100, 0, 0.7)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.sudancrisis
+
+	{
+	background: linear-gradient(rgba(218, 165, 32, 0.7), rgba(128, 0, 0, 0.7)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.womenempowerment
+
+	{
+	background: linear-gradient(rgba(255, 182, 193, 0.7), rgba(255, 99, 71, 0.7)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.agricultural-project
+
+	{
+	background: linear-gradient(rgba(102, 51, 153, 0.8), rgba(255, 20, 147, 0.8)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.maternal-health
+	{
+	background: linear-gradient(rgba(238, 232, 170, 0.7), rgba(240, 128, 128, 0.7)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.infectious-diseases
+	{
+	background: linear-gradient(rgba(255, 87, 34, 0.8), rgba(139, 0, 0, 0.8)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.education-transformation
+	{
+	background: linear-gradient(rgba(255, 218, 185, 0.8), rgba(255, 105, 180, 0.8)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.vocational-training
+	{
+	background: linear-gradient(rgba(107, 142, 35, 0.8), rgba(139, 69, 19, 0.8)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.microloan-programs
+	{
+	background: linear-gradient(rgba(244, 164, 96, 0.8), rgba(112, 128, 144, 0.8)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.sustainable-agriculture
+	{
+	background: linear-gradient(rgba(255, 140, 0, 0.7), rgba(255, 99, 71, 0.7)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+
+.sports-initiative
+	{
+	background: linear-gradient(rgba(0, 191, 255, 0.8), rgba(216, 191, 216, 0.8)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.cultural-heritage
+	{
+	background: linear-gradient(rgba(34, 139, 34, 0.7), rgba(218, 165, 32, 0.7)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.church-building
+	{
+	background: linear-gradient(rgba(255, 228, 196, 0.8), rgba(152, 251, 152, 0.8)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+.faithbased-missions
+	{
+	background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(205, 92, 92, 0.8)), url('your-background-image.jpg') center/cover;
+	padding: 50px;
+	}
+
+
+
+/*---------------------- Get in Touch Contact Form Section -------------------*/
+.get-in-touch {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.get-in-touch h2 {
+  font-size: 28px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.get-in-touch ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.get-in-touch ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.get-in-touch ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.get-in-touch ul li a:hover {
+  text-decoration: underline;
+}
+
+.get-in-touch h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+/* Inquiry Form */
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inquiry-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.inquiry-form textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
 
 
 
