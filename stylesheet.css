@@ -1011,35 +1011,35 @@ h1, h3, h4, p {
 
 
 /*---------------------- Get in Touch Contact Form Section -------------------*/
+
 .get-in-touch {
-  background-color: #ffffff;
-  padding: 30px;
-  margin: 20px auto;
   max-width: 600px;
-  border-radius: 8px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.get-in-touch h2 {
-  font-size: 28px;
-  color: #2c3e50;
+.get-in-touch h2, .get-in-touch h3 {
   text-align: center;
+  color: #0056b3;
   margin-bottom: 20px;
 }
 
 .get-in-touch ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 30px;
+  margin: 0 0 20px;
 }
 
 .get-in-touch ul li {
-  font-size: 16px;
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .get-in-touch ul li a {
-  color: #007bff;
+  color: #0056b3;
   text-decoration: none;
 }
 
@@ -1047,13 +1047,8 @@ h1, h3, h4, p {
   text-decoration: underline;
 }
 
-.get-in-touch h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: #34495e;
-}
 
-/* Inquiry Form */
+/* Inquiry Form Styling */
 .inquiry-form {
   display: flex;
   flex-direction: column;
@@ -1064,14 +1059,20 @@ h1, h3, h4, p {
   margin-bottom: 5px;
 }
 
-.inquiry-form input,
-.inquiry-form textarea {
+.inquiry-form input, .inquiry-form textarea {
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
+  box-sizing: border-box;
+}
+
+.inquiry-form input:focus, .inquiry-form textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
 }
 
 .inquiry-form textarea {
@@ -1079,25 +1080,33 @@ h1, h3, h4, p {
 }
 
 .submit-button {
-  padding: 12px 20px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 16px;
+  background-color: #0056b3;
+  color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
   cursor: pointer;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
-  background-color: #0056b3;
+  background-color: #003d80;
 }
 
+.submit-button:active {
+  transform: scale(0.98);
+}
 
-
-
-
-
+@media (max-width: 768px) {
+  .get-in-touch {
+    padding: 15px;
+  }
+  
+  .get-in-touch h2, .get-in-touch h3 {
+    font-size: 20px;
+  }
+}
 
 
 
