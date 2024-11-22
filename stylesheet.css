@@ -70,12 +70,12 @@ imagelogo {
   
 	font-style: italic;
   
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 
 	color: White;
 	text-align: center;
-	margin-top: -40px;
-	margin-left:15px;
+	margin-top: -60px;
+	margin-left:-5px;
 	}
 
 
@@ -122,21 +122,30 @@ imagelogo {
   	background-color: #333;
  	width: 160px;
   	z-index: 1;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 	}
 
 .dropdown li {
   	float: none;
+	
+	
 	}
 
 #navbar li:hover .dropdown {
  	display: block;
 	}
 
-.dropdown a {
+.dropdown li a {
   	color: white;
+	display: block;
+	text-decoration: none;
+	line-height: 1.2;
+	font-size: 14px;
 	}
 
-.dropdown a:hover {
+.dropdown li a:hover {
   	background-color: #ddd;
   	color: black;
 	}
@@ -232,8 +241,8 @@ header {
     	background-color: orange; /* Bright background color for visibility */
     	color: white; /* Text color */
     	text-align: center; /* Center the text */
-    	padding: 15px 0; /* Padding for spacing */
-    	font-size: 1.2em; /* Increase font size for better readability */
+    	padding: 10px 0; /* Padding for spacing */
+    	font-size: 1.0em; /* Increase font size for better readability */
     	position: relative;
     	z-index: 1000; /* Ensure it appears above other elements */
 	}
@@ -638,6 +647,14 @@ footer .social-media a:hover {
     border: 1px solid #ccc;
     border-radius: 8px;
     width: 200px;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-item:hover {
+  transform: scale(1.1); /* Expands the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
 }
 
 .product-item img {
@@ -1161,6 +1178,179 @@ h1, h3, h4, p {
     padding: 8px 12px;
   }
 }
+
+
+
+/*-----------------------------CSS for Volunteering Page --------------------*/
+
+.volunteer-steps {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-steps h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.volunteer-steps ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.volunteer-steps li {
+  margin-bottom: 20px;
+}
+
+.volunteer-steps h3 {
+  color: #007bff;
+  font-size: 18px;
+}
+
+.volunteer-steps p {
+  font-size: 16px;
+  color: #555;
+}
+
+.volunteer-steps a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.volunteer-steps a:hover {
+  text-decoration: underline;
+}
+
+
+/*----------------CSS FOR VOLUNTEER OPPORTUNITIES SECTION ------------------*/
+
+.page-header {
+  text-align: center;
+  
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.volunteer-paragraph {
+  margin: 10px;
+  margin-left: 95px;
+  font-size: 1.2em;
+}
+
+/* Opportunities Section */
+.opportunities {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.opportunity {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.opportunity:hover {
+  transform: scale(1.02);
+}
+
+.opportunity h2 {
+  color: #007bff;
+  margin-top: 0;
+}
+
+.opportunity ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.opportunity ul li {
+  margin-bottom: 5px;
+}
+
+
+
+
+/* --------------------CSS for Volunteer Application Form -------------------*/
+
+.volunteer-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-form h2 {
+  text-align: center;
+  color: #333;
+}
+
+.volunteer-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.volunteer-form input, .volunteer-form textarea, .volunteer-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.volunteer-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.volunteer-form button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
