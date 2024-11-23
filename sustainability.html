@@ -48,14 +48,21 @@
     </div>
 </div>
 
-	<!------------- Product Grid ------------->
+	<!----------------------- Product Grid ------------------>
+
+
+		<!------------- Notification ------------->
+    <div id="notification" class="notification hidden"></div>
+		<!------------- Notification ------------->
+
 
         <div class="product-grid">
             <div class="product-item" onclick="openModal('Tshirt2.PNG')">
                 <img src="Tshirt2.PNG" alt="AfricaCareLink T-shirt">
                 <h3>Official T-shirt</h3>
                 <p>Price: $35.00</p>
-                <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
 
@@ -63,7 +70,8 @@
                 <img src="Bag.PNG" alt="AfriCaCareLink Bag">
                 <h3>Reusable Shopping Bag with African 							 Print</h3>
                 <p>Price: $30.00</p>
-                <button onclick="addToCart('Kiondos/Eco-Friendly Bag', 20)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Kiondos/Eco-Friendly Bag', 20)">Add to Cart</button>
             </div>
 
 
@@ -71,7 +79,8 @@
                 <img src="Antelope Craft.PNG" alt="Handmade Crafts">
                 <h3>Antelope Craft</h3>
                 <p>Price: $110.00</p>
-                <button onclick="addToCart('Handmade Crafts', 30)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Handmade Crafts', 30)">Add to Cart</button>
             </div>
 
 
@@ -79,7 +88,8 @@
                 <img src="Sandals.PNG" alt="Maasai Sandals">
                 <h3>Maasai Sandals</h3>
                 <p>Price: $25.00</p>
-                <button onclick="addToCart('Maasai Sandals', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Maasai Sandals', 25)">Add to Cart</button>
             </div>
 
 
@@ -87,7 +97,8 @@
                 <img src="African-Beaded-Necklace.PNG" alt="Jewelry">
                 <h3>African Beaded-Necklace</h3>
                 <p>Price: $25.00</p>
-                <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
 
@@ -95,7 +106,8 @@
                 <img src="Maasai-Shuka.PNG  " alt="Shukas/Masai Blankets">
                 <h3>Shukas/Masai Blankets</h3>
                 <p>Price: $25.00</p>
-                <button onclick="addToCart('Shukas/Masai Blankets', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Shukas/Masai Blankets', 25)">Add to Cart</button>
             </div>
 
 
@@ -103,42 +115,48 @@
                 <img src="African Artwork.PNG" alt="Artwork">
                 <h3>African Artworks</h3>
                 <p>Price: $50.00</p>
-                <button onclick="addToCart('Artwork', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Artwork', 25)">Add to Cart</button>
             </div>
 
 <div class="product-item" onclick="openModal('African Beaded Belt.PNG')">
                 <img src="African Beaded Belt.PNG" alt="African Beaded Belt.PNG">
                 <h3>African Beaded Belt</h3>
                 <p>Price: $30.00</p>
-                <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
 <div class="product-item" onclick="openModal('decor-Plates.PNG')">
                 <img src="decor-Plates.PNG" alt="Set of 8 baskets wall decor Plates">
                 <h3>Set of 8 baskets wall decor Plates</h3>
                 <p>Price: $105.00</p>
-                <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
 <div class="product-item" onclick="openModal('dogcollar.PNG')">
                 <img src="dogcollar.PNG" alt="African Beaded Dog Collars">
                 <h3>African Beaded Dog Collars</h3>
                 <p>Price: $35.00</p>
-                <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
 <div class="product-item" onclick="openModal('Kenya Flag Bracelet.PNG')">
                 <img src="Kenya Flag Bracelet.PNG" alt="Kenya Flag Bracelet">
                 <h3>Kenya Flag Bracelet</h3>
                 <p>Price: $30.00</p>
-                <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
 <div class="product-item" onclick="openModal('Kente.PNG')">
                 <img src="Kente.PNG" alt="African Kent Clothing Materials">
                 <h3>African Kent Clothing Materials</h3>
                 <p>Price: $45.00</p>
-                <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
+
+<button onclick="event.stopPropagation(); addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>       
 
 
@@ -318,5 +336,30 @@ function expandImageMore() {
 }
 
 </script>
+
+<!-----------3rd Script: addToCart function to show the notification ------>
+
+<script>
+
+function addToCart(itemName, price) {
+    cart.push({ name: itemName, price: price });
+    updateCart();
+
+    // Show notification
+    const notification = document.getElementById("notification");
+    notification.textContent = `${itemName} added to cart!`;
+    notification.classList.remove("hidden");
+    notification.classList.add("show");
+
+    // Hide the notification after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove("show");
+        setTimeout(() => {
+            notification.classList.add("hidden");
+        }, 300); // Delay for CSS transition to finish
+    }, 3000);
+}
+
+</srcipt>
 </body>
 </html>

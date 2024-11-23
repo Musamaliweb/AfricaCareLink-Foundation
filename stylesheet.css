@@ -673,6 +673,12 @@ button {
     margin-top: 10px;
 }
 
+button:active {
+    transform: translateY(2px); /* Simulates the sinking effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduces the shadow for a     pressed look */
+    background-color: #2c8ad6; /* Optional: Slightly darker background for     feedback */
+}
+
 button:hover {
     background-color: #2980b9;
 }
@@ -690,7 +696,32 @@ button:hover {
     font-size: 1em;
     margin-top: 20px;
 }
-  
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green for success */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.notification.hidden {
+    display: none;
+}
+
 
 	/* ---------------------Modal Styling -------------------*/
 
