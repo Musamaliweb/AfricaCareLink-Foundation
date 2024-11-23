@@ -302,9 +302,9 @@ function clearCart() {
     cart = [];
     updateCart();
 }
-</script>
 
-<!-------------------------------------2nd Script ------------------------->
+</script>
+<!------------------------2nd Script: Open Modal ------------------>
 
 <script>
 
@@ -351,6 +351,9 @@ function addToCart(itemName, price) {
     notification.classList.remove("hidden");
     notification.classList.add("show");
 
+// Play notification sound
+    const audio = new Audio('notification-sound(1).wav');audio.play();
+
     // Hide the notification after 3 seconds
     setTimeout(() => {
         notification.classList.remove("show");
@@ -360,6 +363,29 @@ function addToCart(itemName, price) {
     }, 3000);
 }
 
-</srcipt>
+function removeFromCart(index) {
+    const removedItem = cart[index]; // Get the item to be removed
+    cart.splice(index, 1); // Remove the item from the cart
+    updateCart();
+
+    // Show notification
+    const notification = document.getElementById("notification");
+    notification.textContent = `${removedItem.name} removed from cart!`;
+    notification.classList.remove("hidden");
+    notification.classList.add("show");
+
+// Play removal sound
+    const audio = new Audio('notification-sound(2).wav');audio.play();
+
+    // Hide the notification after 3 seconds
+    setTimeout(() => {
+        notification.classList.remove("show");
+        setTimeout(() => {
+            notification.classList.add("hidden");
+        }, 300); // Delay for CSS transition to finish
+    }, 3000);
+}
+
+</script>
 </body>
 </html>
