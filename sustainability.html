@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<!--------------------------------- Header Section ---------------------------->
+<!-------------------------------- Header Section ------------------------->
 
   <header id="header">
    <img class="imagelogo" src="ACLFLogo2.PNG" width="95" height="90"       alt="AfricaCareLink Foundation Logo">
@@ -25,20 +25,33 @@
 </header>
 </div><br>
 
-<!---------------------------------- Main Content ----------------------------->
+<!------------------------------- Main Content -------------------------->
 
-<!---------------------------------- Shop Section ----------------------------->
+<!---------------------------------- Shop Section------------------------>
 
     <section class="shop-section">
         <h2>Shop Our Merchandise</h2><br>
 
 <p>Support African communities by purchasing our unique products. All proceeds go directly to our humanitarian projects. Our online store offers unique products that directly support African communities. By purchasing our T-shirts, bags, African attires, or handmade crafts from local artisans, you help fund our healthcare, education, and poverty alleviation projects. Please note that every product item displayed comes in variety types of same kind. You can request for more varieties via our <a href = "contactus.html">Contact Us</a> page. Otherwise, feel welcome to fill your Cart below with the item(s) you wish to support us with, and check out happily knowing confidently that an African face will smile tonight!.</p><br>
 
-<!--------------------------------- Product Items ---------------------------->
+<!------------------------------ Product Items --------------------------->
 
 <section>
+
+	<!------------- Modal for Enlarged Image ------------->
+
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span> <!-- Fix for 	"X" -->
+
+    <div id="scrollableContainer">
+        <img id="modalImage" ondblclick="expandImageMore()" alt="Expanded 	Image">
+    </div>
+</div>
+
+	<!------------- Product Grid ------------->
+
         <div class="product-grid">
-            <div class="product-item">
+            <div class="product-item" onclick="openModal('Tshirt2.PNG')">
                 <img src="Tshirt2.PNG" alt="AfricaCareLink T-shirt">
                 <h3>Official T-shirt</h3>
                 <p>Price: $35.00</p>
@@ -46,7 +59,7 @@
             </div>
 
 
-            <div class="product-item">
+            <div class="product-item" onclick="openModal('Bag.PNG')">
                 <img src="Bag.PNG" alt="AfriCaCareLink Bag">
                 <h3>Reusable Shopping Bag with African 							 Print</h3>
                 <p>Price: $30.00</p>
@@ -54,7 +67,7 @@
             </div>
 
 
-            <div class="product-item">
+            <div class="product-item" onclick="openModal('Antelope Craft.PNG')">
                 <img src="Antelope Craft.PNG" alt="Handmade Crafts">
                 <h3>Antelope Craft</h3>
                 <p>Price: $110.00</p>
@@ -62,7 +75,7 @@
             </div>
 
 
-            <div class="product-item">
+            <div class="product-item" onclick="openModal('Sandals.PNG')">
                 <img src="Sandals.PNG" alt="Maasai Sandals">
                 <h3>Maasai Sandals</h3>
                 <p>Price: $25.00</p>
@@ -70,7 +83,7 @@
             </div>
 
 
-            <div class="product-item">
+            <div class="product-item" onclick="openModal('African-beaded-Necklace.PNG')">
                 <img src="African-beaded-Necklace.PNG" alt="Jewelry">
                 <h3>African Beaded-Necklace</h3>
                 <p>Price: $25.00</p>
@@ -78,7 +91,7 @@
             </div>
 
 
-            <div class="product-item">
+            <div class="product-item" onclick="openModal('Maasai-Shuka.PNG')">
                 <img src="Maasai-Shuka.PNG  " alt="Shukas/Masai Blankets">
                 <h3>Shukas/Masai Blankets</h3>
                 <p>Price: $25.00</p>
@@ -86,42 +99,42 @@
             </div>
 
 
-     <div class="product-item">
+     <div class="product-item" onclick="openModal('African Artwork.PNG')">
                 <img src="African Artwork.PNG" alt="Artwork">
                 <h3>African Artworks</h3>
                 <p>Price: $50.00</p>
                 <button onclick="addToCart('Artwork', 25)">Add to Cart</button>
             </div>
 
-<div class="product-item">
+<div class="product-item" onclick="openModal('African Beaded Belt.PNG')">
                 <img src="African Beaded Belt.PNG" alt="African Beaded Belt.PNG">
                 <h3>African Beaded Belt</h3>
                 <p>Price: $30.00</p>
                 <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
-<div class="product-item">
+<div class="product-item" onclick="openModal('decor-Plates.PNG')">
                 <img src="decor-Plates.PNG" alt="Set of 8 baskets wall decor Plates">
                 <h3>Set of 8 baskets wall decor Plates</h3>
                 <p>Price: $105.00</p>
                 <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
-<div class="product-item">
+<div class="product-item" onclick="openModal('dogcollar.PNG')">
                 <img src="dogcollar.PNG" alt="African Beaded Dog Collars">
                 <h3>African Beaded Dog Collars</h3>
                 <p>Price: $35.00</p>
                 <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
-<div class="product-item">
+<div class="product-item" onclick="openModal('Kenya Flag Bracelet.PNG')">
                 <img src="Kenya Flag Bracelet.PNG" alt="Kenya Flag Bracelet">
                 <h3>Kenya Flag Bracelet</h3>
                 <p>Price: $30.00</p>
                 <button onclick="addToCart('Official T-shirt', 25)">Add to Cart</button>
             </div>
 
-<div class="product-item">
+<div class="product-item" onclick="openModal('Kente.PNG')">
                 <img src="Kente.PNG" alt="African Kent Clothing Materials">
                 <h3>African Kent Clothing Materials</h3>
                 <p>Price: $45.00</p>
@@ -129,11 +142,17 @@
             </div>       
 
 
+<!--------------------------- Modal SEction-------------------------->
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">X</span>
+        <img id="modalImage" class="modal-content" alt="Enlarged Product">
+    </div>
             
         </div>
     </section>
 
-<!----------------------------------- Cart Section ---------------------------->
+<!--------------------------- Cart Section -------------------------->
 
     <section class="cart-section">
         <h2>Your Cart</h2>
@@ -141,7 +160,7 @@
         <p id="totalPrice"><Total: $0.00</p><br>
 
 
-<!----------------------------- Delivery Information ------------------------->
+<!------------------------- Delivery Information ---------------------->
 
         <h3>Delivery Information</h3><br>
         <form id="deliveryForm">
@@ -165,14 +184,14 @@
         </form>
 	<br>
 
-<!-------------------------------------- PayPal Button ----------------------->
+<!------------------------------- PayPal Button ---------------------->
 
         <div id="paypal-button-container"></div>
     </section>
 
     <script src="scripts.js"></script>
 
-<!------------------------------- PayPal SDK --------------------------------->
+<!---------------------------- PayPal SDK ----------------------------->
 
     <script src="https://www.paypal.com/sdk/js?client-id=AdRURiRU-zYF1qzO2-ja2NXZ--AlOXf0Zvj92UeJoROTxCzqJf5PcxbaKo4lTqhHiSeGZC6pVaMLc6As&currency=USD"></script>
     <script>
@@ -219,7 +238,7 @@
     </script>
 
 
- <!---------------------------------- Footer -------------------------------->
+ <!---------------------------------- Footer ------------------------------>
 
   <footer>
     <div class="footer-content">
@@ -227,7 +246,7 @@
     </div>
   </footer>
 
-<!-------------------------------- Java Script ------------------------------>
+<!---------------------------------- Java Script --------------------------->
 
   <script src="scripts.js"></script>
 
@@ -265,6 +284,39 @@ function clearCart() {
     cart = [];
     updateCart();
 }
+</script>
+
+<!-------------------------------------2nd Script ------------------------->
+
+<script>
+
+// Open Modal
+function openModal(imageSrc) {
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    modalImg.src = imageSrc; // Set the clicked image as the modal image
+    modal.style.display = 'flex'; // Show the modal
+    modalImg.classList.remove('expanded'); // Reset expanded state
+    document.body.style.overflow = 'hidden'; // Disable page scroll
+}
+
+// Close Modal
+function closeModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none'; // Hide the modal
+    document.body.style.overflow = ''; // Re-enable page scroll
+}
+
+// Double-Click to Expand More
+function expandImageMore() {
+    const modalImg = document.getElementById('modalImage');
+    if (!modalImg.classList.contains('expanded')) {
+        modalImg.classList.add('expanded'); // Expand the image
+    } else {
+        modalImg.classList.remove('expanded'); // Reset to original size
+    }
+}
+
 </script>
 </body>
 </html>
