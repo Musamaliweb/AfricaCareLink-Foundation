@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AfricaCareLink Foundation</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+<!------------------------------ Favicon (optional but recommended) ----------->
+
+    <link rel="icon" href="ACLFLogo2.PNG" type="image/png"
 </head>
 <body>
 
@@ -12,10 +16,10 @@
   <!-- Header Section -->
 	
 
-	<div class="notification-bar">
+	<div class="notification-bar>
 <span>Urgent Need: Support our initiatives in education and healthcare! Donate now to make a difference!</span>
 
-<a href="donate.html" class="donation-button">Donate Now</a>
+<a href="donate.html" class="donation-button"></a>
     </div>
 
 	<header id="header">
@@ -108,7 +112,7 @@
 	
    	 <section id="aid">
 	<div class = "index-page">
-<h2>1.  African Humanitarian Aid</h2>
+<h6><span class="highlight-number">1. African Humanitarian Aid</span></h6>
 	</div>
  	 <div class="image-container">
 	<br>
@@ -154,20 +158,15 @@ As international aid struggles to reach those most in need, the humanitarian cri
 
 
 
-
+	
     	
-<h2 id="OtherFocusAreas">Our Other Focus Areas</h2>
+<h3 id="OtherFocusAreas"> Our Other Focus Areas</h3>
+	
+<button class="accordion" onclick="toggleAccordion('panel2')"> <span class="highlight-number">2. African Projects</span></button>
 
-<div class="accordion">
-<h3 class="accordion-header">
-<a href="#OtherFocusAreas" onclick="toggleAccordion('projectContent')">2. African Projects</a></h3>
 
-	</div>
 
-<div class="accordion-content" id="projectContent" style="display: none;">
-
-<div class="image-container">
-
+	<div class="panel" id="panel2"><br>
 <p>We believe in building solid foundations for future growth. Our development projects focus on creating infrastructure, fostering economic empowerment, and supporting sustainable livelihoods. By partnering with local organizations, we work to implement projects that promote long-term self-sufficiency and development.</p>
 
 	<figure>
@@ -198,26 +197,15 @@ Through partnerships with smallholder farmers, cooperatives, and local businesse
 
 <p><a href = "agricultural-project.html">Read more about how our African Projects are transforming agriculture, empowering communities, and driving sustainable development across the continent. </a></p>
     	</figure>
+
+<a href="#OtherFocusAreas" onclick="closeAccordion('panel2')">Back to Our Other Focus Areas</a>
 	</div>
 	 
-<p><a href="javascript:void(0);" onclick="closeAccordionAndScroll()">Back to Other Focus Areas</a></p>
-	</div>
-	</div>
-	
-	
-    </section>
 
 
+<button class="accordion" onclick="toggleAccordion('panel3')"> <span class="highlight-number">3. African Diseases</span></button>
 
-
-
-	<div class="accordion">
-  <h3 class="accordion-header"><a href="#OtherFocusAreas" onclick="toggleAccordion('healthContent')">3. African Diseases and Healthcare</a></h3>
-	</div>
-  <div class="accordion-content" id="healthContent" style="display: none;">
-    <div class="image-container">
-	
-
+	<div class="panel" id="panel3"><br>
 <p>Healthcare is a fundamental right. At AfricaCareLink Foundation, we strive to improve health outcomes by offering medical services, establishing clinics, and delivering health education programs. From combating infectious diseases to supporting maternal and child health, we are committed to ensuring access to quality healthcare for all.</p>
 
 	<figure>
@@ -248,27 +236,15 @@ Our healthcare programs go beyond treatment. Through health education and commun
 
 <p><a href = "infectious-diseases.html"> Read more about how we are battling infectious diseases and working to improve health outcomes in some of Africa's most vulnerable communities.</a></p>
     	</figure>
+
+<a href="#OtherFocusAreas" onclick="closeAccordion('panel3')">Back to Our Other Focus Areas</a>
 	</div>
 
-<p><a href="javascript:void(0);" onclick="closeAccordionAndScroll()">Back to Other Focus Areas</a></p>
-
-	</div>
-	</div>
-      
-    </section>
 
 
+<button class="accordion" onclick="toggleAccordion('panel4')"> <span class="highlight-number">4. African Education</span></button>
 
-
-    	<div class="accordion">
-<h3 class="accordion-header">
-<a href="#OtherFocusAreas" onclick="toggleAccordion('educationContent')">4. African Education</a></h3>
-	</div>
-
-<div class="accordion-content" id="educationContent" style="display: none;">
-
-<div class="image-container">
-
+	<div class="panel" id="panel4"><br>
  <p>Education is vital to breaking the cycle of poverty. We work with schools, communities, and governments to provide access to quality education for children and adults. Our programs focus on building schools, offering scholarships, and providing vocational training, all aimed at empowering future generations with the knowledge and skills they need to succeed.</p>
 
 	<figure>
@@ -298,24 +274,14 @@ By offering scholarships and access to training, we are breaking the cycle of po
 
 Read more about how our vocational training programs are empowering individuals and driving economic growth across Africa.</a></p>
     	</figure>
-	</div>
-<p><a href="javascript:void(0);" onclick="closeAccordionAndScroll()">Back to Other Focus Areas</a></p>
-	</div>
-	</div>
-     
-    </section>
 
-
-
-    	<div class="accordion">
-<h3 class="accordion-header">
-<a href="#OtherFocusAreas" onclick="toggleAccordion('PoorContent')">5. African Poor Countries</a></h3>
+<a href="#OtherFocusAreas" onclick="closeAccordion('panel4')">Back to Our Other Focus Areas</a>
 	</div>
 
-<div class="accordion-content" id="PoorContent" style="display: none;">
 
-<div class="image-container">
+<button class="accordion" onclick="toggleAccordion('panel5')"> <span class="highlight-number">5. African Poor Countries</span></button>
 
+	<div class="panel" id="panel5"><br>
 <p>We are committed to tackling poverty at its roots. Through economic development initiatives, job creation programs, and access to financial resources, we empower individuals and families to lift themselves out of poverty. Our focus is on sustainable solutions that provide long-term benefits and promote dignity.</p> 
 
 	<figure>
@@ -343,23 +309,14 @@ Our job creation programs focus on skills training and agricultural development,
 
 Read more about how our sustainable agriculture initiatives are lifting families out of poverty and fostering economic growth in Africa's poorest regions.</a></p>
     	</figure>
-	</div>
-<p><a href="javascript:void(0);" onclick="closeAccordionAndScroll()">Back to Other Focus Areas</a></p>
-	</div>
-	</div>
-      
-    </section>
 
-
-<div class="accordion">
-<h3 class="accordion-header">
-<a href="#OtherFocusAreas" onclick="toggleAccordion('sportsContent')">6. African Sports and Cultural Initiatives</a></h3>
+<a href="#OtherFocusAreas" onclick="closeAccordion('panel5')">Back to Our Other Focus Areas</a>
 	</div>
 
-<div class="accordion-content" id="sportsContent" style="display: none;">
 
-<div class="image-container">
+<button class="accordion" onclick="toggleAccordion('panel6')"> <span class = "highlight-number">6. African Sports and Cultural Initiatives </span> </button>
 
+	<div class="panel" id="panel6"><br>
  <p>At <i>AfricaCareLink Foundation</i>, our African Sports and Cultural Initiatives aim to promote unity, talent development, and cultural preservation across the continent. Through organized sports tournaments, we provide young athletes with opportunities to grow their skills, foster teamwork, and pursue their dreams. Meanwhile, our cultural initiatives celebrate Africa's rich heritage through inter-cultural events, showcasing music, dance, and art that connect communities and honor tradition. By investing in sports and culture, we empower individuals and strengthen the social fabric of African communities, inspiring pride and resilience for future generations.
 
 
@@ -396,20 +353,15 @@ By supporting local artists and cultural practitioners, we are not only preservi
 
 <p><a href = "cultural-events.html">Read more about how our inter-cultural events are celebrating African diversity and connecting communities through art and entertainment.</a></p>
     	</figure>
-	</div>
-<p><a href="javascript:void(0);" onclick="closeAccordionAndScroll()">Back to Other Focus Areas</a></p><br>
-	</div>
-	</div>
 
-    	<div class="accordion">
-<h3 class="accordion-header">
-<a href="#OtherFocusAreas" onclick="toggleAccordion('missionsContent')">7. African Missions for Christ</a></h3>
+<a href="#OtherFocusAreas" onclick="closeAccordion('panel6')">Back to Our Other Focus Areas</a>
 	</div>
 
-<div class="accordion-content" id="missionsContent" style="display: none;">
 
-<div class="image-container">
 
+<button class="accordion" onclick="toggleAccordion('panel7')"> <span class = "highlight-number">7. African Missions for Christ </span> </button>
+
+	<div class="panel" id="panel7"><br>
  <p>At the heart of AfricaCareLink Foundation is a commitment to spiritual growth and community. Our religious missions aim to bring hope and guidance by partnering with faith-based organizations to offer support, build churches, and create spaces where communities can unite in faith and fellowship.
 Together, we can make a difference.</p> 
 
@@ -440,15 +392,14 @@ Our missions go beyond religious services - they build connections, restore dign
 
 <p> <a href = "faithbased-missions.html">Read more about how our faith-based missions are bringing hope and support to Africa's most vulnerable populations.</a></p>
     	</figure>
-	</div>
-<p><a href="javascript:void(0);" onclick="closeAccordionAndScroll()">Back to Other Focus Areas</a></p>
-	</div>
-	</div>
-   
-	</section>
 
+<a href="#OtherFocusAreas" onclick="closeAccordion('panel7')">Back Other Focus Areas</a>
 
+	</div>
 
+</section>
+
+</main><br>
 
 
 
@@ -461,7 +412,7 @@ Our missions go beyond religious services - they build connections, restore dign
 
   <footer>
     <div class="footer-content">
-      <p>&copy; 2024 AfricaCareLink Foundation | All Rights Reserved | <i>AfricaCareLink Foundation: Empowering Africa, One Community at a Time.</p></i></p>
+      <p>&copy; 2025 AfricaCareLink Foundation | All Rights Reserved | <i>AfricaCareLink Foundation: Empowering Africa, One Community at a Time.</p></i></p>
       
 <div class="social-media">
   <a href="contactus.html">Facebook</a> | 
@@ -478,33 +429,18 @@ Our missions go beyond religious services - they build connections, restore dign
 
 
 <script>
-  function toggleAccordion(contentId) {
-    const content = document.getElementById(contentId);
-    
-    // Close all accordion content sections first
-    const allContent = document.querySelectorAll('.accordion-content');
-    allContent.forEach(section => {
-      section.style.display = 'none';
-    });
-    
-    // Open the clicked section
-    if (content.style.display === "none" || content.style.display === "") {
-      content.style.display = "block";
+  function toggleAccordion(panelId) {
+    var panel = document.getElementById(panelId);
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
     } else {
-      content.style.display = "none";
+      panel.style.display = "block";
     }
   }
 
-  // Function for closing accordion and scrolling to "Other Focus Areas"
-  function closeAccordionAndScroll() {
-    // Close all accordion content sections first
-    const allContent = document.querySelectorAll('.accordion-content');
-    allContent.forEach(section => {
-      section.style.display = 'none';
-    });
-    
-    // Scroll back to "Other Focus Areas"
-    document.getElementById('otherFocusArea').scrollIntoView({ behavior: 'smooth' });
+  function closeAccordion(panelId) {
+    var panel = document.getElementById(panelId);
+    panel.style.display = "none";
   }
 </script>
 
