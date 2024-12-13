@@ -319,7 +319,7 @@ figcaption {
   	color: #555; /* A soft color for the caption */
 	text-align: left;
 	}
-/*============== Accordion (Collapsible Sections) Success Stories Page====== */
+/*========================= Accordion (Collapsible Sections) ================ */
 
 .accordion {
 	background:  url('Texture5.PNG') center/cover;
@@ -348,6 +348,7 @@ figcaption {
     	display: flex 1;
     	align-items: flex-start;
   }
+
 
  		/*================ Make the image round=============*/
 .round-image {
@@ -406,13 +407,28 @@ figcaption {
 /*================ Position Image End-to-End ========================== */
 
 .full-width-image img {
-  	width: 100%;
-    max-width: 100%;
-    height: auto; /* Maintains the aspect ratio */
+    width: auto; /* Ensures the image size respects its aspect ratio */
+    max-width: 100%; /* Increases the image's maximum width; adjust percentage */
+    height: auto; /* Maintains aspect ratio */
     object-fit: contain; /* Ensures the entire image fits without cropping */
     object-position: center; /* Centers the image */
-    display: block;
-	}
+    display: block; /* Removes inline spacing */
+}
+
+.full-width-image {
+    margin: 0; /* Removes any margin around the container */
+    padding: 0; /* Removes any padding inside the container */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Horizontally centers the image */
+    align-items: center; /* Vertically centers the image */
+    width: auto%;
+    max-width: 100%; /* Ensures the container spans the full width */
+    height: auto; /* Adjusts height automatically based on content */
+    overflow: hidden; /* Hides any overflow content */
+    background: none; /* Removes any default background */
+    box-sizing: border-box; /* Ensures proper padding/border calculation */
+}
+
 /*================ Style for Tortola Image ========================== */
 	
 .tortolaimage {
@@ -983,77 +999,77 @@ background: url('Texture1.PNG') no-repeat center center/cover;
 
 .masisi
 	{
-	background: linear-gradient(rgba(34, 139, 34, 0.7), rgba(0, 100, 0, 0.7)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .sudancrisis
 
 	{
-	background: linear-gradient(rgba(218, 165, 32, 0.7), rgba(128, 0, 0, 0.7)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .womenempowerment
 
 	{
-	background: linear-gradient(rgba(255, 182, 193, 0.7), rgba(255, 99, 71, 0.7)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .agricultural-project
 
 	{
-	background: linear-gradient(rgba(102, 51, 153, 0.8), rgba(255, 20, 147, 0.8)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .maternal-health
 	{
-	background: linear-gradient(rgba(238, 232, 170, 0.7), rgba(240, 128, 128, 0.7)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .infectious-diseases
 	{
-	background: linear-gradient(rgba(255, 87, 34, 0.8), rgba(139, 0, 0, 0.8)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .education-transformation
 	{
-	background: linear-gradient(rgba(255, 218, 185, 0.8), rgba(255, 105, 180, 0.8)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .vocational-training
 	{
-	background: linear-gradient(rgba(107, 142, 35, 0.8), rgba(139, 69, 19, 0.8)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .microloan-programs
 	{
-	background: linear-gradient(rgba(244, 164, 96, 0.8), rgba(112, 128, 144, 0.8)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .sustainable-agriculture
 	{
-	background: linear-gradient(rgba(255, 140, 0, 0.7), rgba(255, 99, 71, 0.7)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 
 .sports-initiative
 	{
-	background: linear-gradient(rgba(0, 191, 255, 0.8), rgba(216, 191, 216, 0.8)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
 .cultural-heritage
 	{
-	background: linear-gradient(rgba(34, 139, 34, 0.7), rgba(218, 165, 32, 0.7)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
@@ -1065,7 +1081,7 @@ background: url('Texture1.PNG') no-repeat center center/cover;
 
 .faithbased-missions
 	{
-	background: linear-gradient(rgba(255, 192, 203, 0.8), rgba(205, 92, 92, 0.8)), url('your-background-image.jpg') center/cover;
+	background: url('Texture7.PNG') no-repeat center center/cover;
 	padding: 50px;
 	}
 
@@ -1378,15 +1394,60 @@ background: url('Texture1.PNG') no-repeat center center/cover;
 
 
 
+/* ----------------CSS for Styling  Accordion-index page-Images --------------*/
 
 
+.accordion {
+	background: url('Texture5.PNG') center/cover;
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	font-size: 10px;
+	font-family: sans-serif;
+	outline: none;
+	transition: 0.4s;
+	background-color: #f1f1f1;
+}
 
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+}
 
+/* Flexbox container for images */
+.image-section {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px; /* Adjust spacing between the images */
+	margin: 20px 0;
+}
 
+/* Individual figures */
+.image-section figure {
+	flex: 1; /* Adjusts image size to fit container */
+	text-align: center;
+}
 
+/* Content images */
+.content-image {
+	width: 100%;
+	max-width: 500px; /* Optional: Limits maximum width of images */
+	height: auto;
+	border: 1px solid #ccc; /* Optional: Adds border around images */
+	border-radius: 5px; /* Optional: Rounds image corners */
+}
 
-
-
+/* Figure captions */
+figcaption {
+	font-size: 12px;
+	color: #555;
+	margin-top: 5px;
+	line-height: 1.5;
+}
 
 
 
