@@ -85,50 +85,107 @@ imagelogo {
 
 #navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between the logo/menu toggle and links */
+  flex-direction: column; /* Stacks items vertically on small screens */
   align-items: center;
-  padding: 10px 20px;
   background-color: #333;
-  color: #fff;
+  color: white;
+  padding: 10px 20px;
+  width: 100%; /* Ensures navbar takes the full width */
+  box-sizing: border-box; /* Includes padding in width calculation */
 }
 
 #navbar ul {
-  display: flex;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  width: 100%; /* Makes the menu items take full width */
+  flex-direction: column; /* Stacks items vertically for mobile */
+  display: none; /* Initially hide the menu for mobile */
+  align-items: center; /* Center-align the menu links */
 }
 
 #navbar ul li {
+  margin: 5px 0;
   position: relative;
 }
 
 #navbar ul li a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   padding: 10px 15px;
+  display: block; /* Ensures clickable area spans padding */
+  text-align: center; /* Centers text within menu items */
 }
 
-#navbar ul li .dropdown {
-  display: none;
-  position: absolute;
+#navbar ul li a:hover {
   background-color: #444;
-  top: 100%;
+}
+
+/* Dropdown styles */
+.dropdown {
+  display: none; /* Hide dropdown menus */
+  position: absolute; /* Ensures dropdown does not affect the layout */
+  top: 100%; /* Positions dropdown below parent item */
   left: 0;
-  min-width: 200px;
-  list-style: none;
-  padding: 10px 0;
+  background-color: #333; /* Same as navbar for consistency */
+  padding: 0;
 }
 
 #navbar ul li:hover .dropdown {
-  display: block;
+  display: flex; /* Shows dropdown on hover */
+  flex-direction: column; /* Stacks dropdown links vertically */
+  min-width: 150px; /* Adjust to desired width */
+  z-index: 10; /* Ensures dropdown appears above other content */
 }
 
-.donation-button {
-  background-color: #f44336;
-  padding: 10px 20px;
-  border-radius: 5px;
-  color: #fff;
+#navbar ul li .dropdown li {
+  margin: 0; /* Removes extra margin inside dropdown */
+}
+
+#navbar ul li .dropdown li a {
+  text-align: left; /* Aligns text to the left for dropdown items */
+  padding: 10px;
+}
+
+/* Button styles */
+.menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (min-width: 600px) {
+  #navbar {
+    flex-direction: row; /* Align logo/menu and links horizontally */
+    justify-content: space-between; /* Space between logo/menu and links */
+  }
+
+  #navbar ul {
+    display: flex; /* Show menu horizontally on larger screens */
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-around;
+    align-items: center;
+    width: auto; /* Adjusts width to fit content */
+  }
+
+  .menu-toggle {
+    display: none; /* Hides the menu button on larger screens */
+  }
+}
+
+/* Ensure dropdown aligns with the parent menu item in desktop view */
+@media (min-width: 768px) {
+  #navbar ul li:hover .dropdown {
+    position: absolute; /* Keeps dropdown aligned below parent */
+    top: 100%;
+    left: 0;
+    background-color: #444;
+  }
 }
 
 /*=================================== Dropdown Menu========================== */
