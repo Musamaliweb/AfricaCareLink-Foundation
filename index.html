@@ -13,7 +13,7 @@
 <body>
 
 
-  <!-- Header Section -->
+<!-------------------------------- Header Section ----------------------------->
 	
 
 	<div class="notification-bar>
@@ -34,12 +34,14 @@
 
 
 
-  <!-- Navigation Bar Section -->
+<!------------------------------ Navigation Bar Section ---------------------->
 
 
   <nav id="navbar">
+
 <button class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</button>
-    <ul>
+    <ul class="menu">
+
      <li><a href="/AfricaCareLink-Foundation/index.html">Home</a></li>
       <li><a href="aboutus.html">About Us</a>
 
@@ -83,8 +85,8 @@
       	<li><a href="blog.html">Blog/News</a></li>
       	<li><a href="partnerships.html">Partnerships</a></li>
       	<li><a href="contactus.html">Contact Us</a></li>
-      	<li><a href="donate.html" class = "donation-button">Donate Now</a></li>
 	<li><a href="sustainability.html">Sustainability</a></li>
+	<li><a href="donate.html" class = "donation-button">Donate Now</a></li>
 
     </ul>
   </nav>
@@ -453,9 +455,13 @@ Our missions go beyond religious services - they build connections, restore dign
 
 <script>
   function toggleMenu() {
-    const menu = document.querySelector('#navbar ul');
-    menu.classList.toggle('active');
+  const menu = document.querySelector('#navbar ul');
+  if (menu.style.display === 'flex') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'flex';
   }
+}
 </script>
 </body>
 </html>
