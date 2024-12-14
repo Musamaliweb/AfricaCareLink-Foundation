@@ -16,21 +16,35 @@
 <!-------------------------------- Header Section ----------------------------->
 	
 
-	<div class="notification-bar>
-<span>Urgent Need: Support our initiatives in education and healthcare! Donate now to make a difference!</span>
 
-<a href="donate.html" class="donation-button"></a>
+<header id="header">
+    <img class="imagelogo" src="ACLFLogo2.PNG" width="95" height="90" alt="AfricaCareLink Foundation Logo">
+    <div>
+        <h1>AfricaCareLink Foundation</h1>
+        <br><br>
+        <h3 class="headerh3"><i>Empowering Africa, One Community at a Time</i></h3>
     </div>
 
-	<header id="header">
-   <img class="imagelogo" src="ACLFLogo2.PNG" width="95" height="90"       alt="AfricaCareLink Foundation Logo">
-	<div>
+<!--------------------------- Rotating African Map --------------------------->
 
-    <h1>AfricaCareLink Foundation</h1><br><br>
-    <h3 class = "headerh3"><i>Empowering Africa, One Community at     a Time</i></headerh3>
-    	</div>
+    <div class="rotating-map-container">
+    <img 
+        class="rotating-map" 
+        src="africa-map.png" 
+        alt="Rotating African Map" 
+        onclick="toggleMapInteraction()">
+    <div class="map-details">
+        <ul>
+            <li><u>North-Africa:</u> Algeria,-Egypt,-Libya,-Morocco, Tunisia</li>
+            <li><u>West-Africa:</u> Nigeria,-Ghana,-Senegal,-Cote d'Ivoire, Mali</li>
+            <li><u>East-Africa:</u> Kenya,-Uganda,-Tanzania,-Ethiopia, Rwanda</li>
+            <li><u>Central-Africa:</u> Congo,-Cameroon,-Gabon,-Chad</li>
 
-  	</header>
+            <li><u>Southern-Africa:</u> South-Africa,-Zimbabwe,-Zambia, Botswana</li>
+        </ul>
+    </div>
+</div>
+</header>
 
 
 
@@ -461,6 +475,14 @@ Our missions go beyond religious services - they build connections, restore dign
   } else {
     menu.style.display = 'flex';
   }
+}
+</script>
+<script>
+function toggleMapInteraction() {
+    const mapContainer = document.querySelector('.rotating-map-container');
+    
+    // Toggle the 'clicked' class on the map container
+    mapContainer.classList.toggle('clicked');
 }
 </script>
 </body>
