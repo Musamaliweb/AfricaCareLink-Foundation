@@ -1615,7 +1615,7 @@ background: url('Texture1.PNG') no-repeat center center/cover;
         display: block;
         padding: 10px 15px;
         text-decoration: none;
-        color: #333;
+        color: blue;
         border-bottom: 1px solid #ddd;
         font-size: 14px;
     }
