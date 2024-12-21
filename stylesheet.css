@@ -1538,7 +1538,7 @@ background: url('Texture1.PNG') no-repeat center center/cover;
 }
 }
 
-/*----------------------------CSS for Index-Welcome Section ----------------*/
+/*----------------------Query Media for Index-Welcome Section ----------------*/
 
 @media (max-width: 600px) {
     #about {
@@ -1571,6 +1571,89 @@ background: url('Texture1.PNG') no-repeat center center/cover;
 }
 
 
+/*----------------------- Query Media for Navbar Section ---------------------*/
 
+@media (max-width: 600px) {
+    #navbar {
+        position: relative;
+        background-color: #f9f9f9; /* Optional: Adjust background for better visibility */
+        padding: 10px;
+        text-align: left;
+    }
+
+    .menu-toggle {
+        display: block; /* Show menu toggle button */
+        background-color: #007bff; /* Optional: Style toggle button */
+        color: white;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        cursor: pointer;
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack menu items vertically */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    .menu.show {
+        display: flex; /* Show menu when toggle is activated */
+        background-color: #f9f9f9;
+    }
+
+    .menu li {
+        width: 100%;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    .menu a:hover {
+        background-color: #007bff; /* Optional: Highlight menu items on hover */
+        color: white;
+    }
+
+    .dropdown {
+        display: none; /* Hide dropdowns by default */
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        background-color: #f9f9f9; /* Optional: Background for dropdown */
+    }
+
+    .menu li:hover .dropdown {
+        display: block; /* Show dropdown on hover */
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .donation-button {
+        background-color: #e74c3c; /* Highlight Donate Now button */
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 16px;
+        margin: 10px 0;
+        display: block;
+        width: calc(100% - 30px);
+    }
+
+    .donation-button:hover {
+        background-color: #c0392b;
+    }
+}
 
 
