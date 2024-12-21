@@ -1657,3 +1657,62 @@ background: url('Texture1.PNG') no-repeat center center/cover;
 }
 
 
+/*---------------------- Media Query for Rotating Map ------------------------*/
+
+@media (max-width: 480px) {
+    .rotating-map-container {
+        width: 100%; /* Adjust width to fit smaller screens */
+        padding: 10px; /* Add padding for better spacing */
+        text-align: center; /* Center content for better display */
+    }
+
+    .rotating-map {
+        width: 80%; /* Scale down the image size */
+        max-width: 300px; /* Set a maximum width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .map-details {
+        font-size: 12px; /* Reduce font size for readability */
+        width: 90%; /* Adjust details box width */
+        margin: 10px auto; /* Center and add spacing */
+        text-align: left; /* Align text properly */
+        line-height: 1.4; /* Improve text readability */
+    }
+
+    .map-details ul {
+        padding: 0; /* Remove extra padding */
+        list-style-type: none; /* Remove bullets */
+    }
+
+    .map-details li {
+        margin-bottom: 5px; /* Add space between list items */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
