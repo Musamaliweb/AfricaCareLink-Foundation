@@ -1664,13 +1664,13 @@ background: url('Texture1.PNG') no-repeat center center/cover;
         width: 100%; /* Adjust width to fit smaller screens */
         padding: 10px; /* Add padding for better spacing */
         text-align: center; /* Center content for better display */
+        float: right;
     }
 
     .rotating-map {
-        width: 20%; /* Scale down the image size */
+        width: 10%; /* Scale down the image size */
         max-width: 300px; /* Set a maximum width */
         height: auto; /* Maintain aspect ratio */
-        float: right;
     }
 
     .map-details {
