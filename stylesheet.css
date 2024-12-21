@@ -1664,7 +1664,9 @@ background: url('Texture1.PNG') no-repeat center center/cover;
         width: 100%; /* Adjust width to fit smaller screens */
         padding: 10px; /* Add padding for better spacing */
         text-align: center; /* Center content for better display */
-        float: right;
+         position: absolute;
+    right: 0; /* Aligns it to the far right */
+    top: 0; /* Adjusts the vertical alignment if needed */
     }
 
     .rotating-map {
